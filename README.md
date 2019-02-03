@@ -20,3 +20,4 @@ install.packages(c("rmarkdown", "glmnet","ROCR"))
 # Notes
 
 - Some implementations depend on `parallel::mclapply` which may be inconvenient for MS Windows users. See [here](http://www.r-bloggers.com/implementing-mclapply-on-windows-a-primer-on-embarrassingly-parallel-computation-on-multicore-systems-with-r/) for an easy solution, or manually revert all `mclapply` to `lapply`.
+- For Jupyter Notebooks, we make use of an R native kernel. See [here](https://github.com/IRkernel/IRkernel) for an installation. Otherwise, R markdowns are also available. 
