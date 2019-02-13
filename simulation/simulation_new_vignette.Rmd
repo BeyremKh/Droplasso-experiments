@@ -115,9 +115,10 @@ One can notice that the ElasticNet is best performing when it is selecting varia
 Let's now see how the DropLasso behaves for non-noisy and noisy simulations settings respectively. 
 
 ```{r droplasso perf_no_noise}
+
 n_passes = 10000
 probalist <- 0.6^seq(0,10)
-
+library(droplasso)
 auclist <- c()
 for (proba in probalist) {
   # Train on the train set
@@ -171,7 +172,7 @@ print(paste("at p=1 the accuracy is ",auclist[1], ". It is for the best lambda t
 
 It is interesting to remark that droplasso makes use of dorpout only in the case where the simulation itself contins dropout events, that is a zero that hides a nonzero value. 
 
-##  Comparing Droplasso and Glmnet: 10 runs without noise
+##  Comparing Droplasso and Glmnet:
 We now procceed to a comparaison between DropLasso, dropout and ElasticNet on our Simulation.
 In order to make a fair comparaison, we repeat the following on multiple runs (nruns) : 
 - Generate a training, a validation and a test dataset from the simulation setting.
@@ -187,27 +188,27 @@ source("compare_simul.R")
 
 ```
 
-
-```{r compare_processing}
-
-```
-## Experiment runs 
+# Experiment runs without noise
 
 
 ```{r compare_no_noise}
 #10 runs accuracy comparaison with no noise
-proc_compare(nruns=10, q=1)
+proc_compare(nruns=1000, q=1)
 
 ```
 
+# Experiment runs with small noise
+ 
 ```{r compare_small_noise}
 #10 runs accuracy comparaison with noise ration = 0.4
-proc_compare(nruns=10, q=0.4)
+proc_compare(nruns=1000, q=0.4)
 ```
+
+# Experiment runs with big noise
 
 ```{r compare_big_noise}
 #10 runs accuracy comparaison with noise ration = 0.1
-proc_compare(nruns=10, q=0.1)
+proc_compare(nruns=1000, q=0.2)
 ```
 
 We can see that ElasticNet outperforms droplasso when the simulations do not contain noise or do contain moderate noise. However droplasso significantly outperforms ElasticNet when the simulations contain more and more noise.
