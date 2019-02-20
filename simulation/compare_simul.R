@@ -103,7 +103,7 @@ compare <- function(nruns=10 , nlambda=10,   alphalist= seq(0,1,0.1), n_passes=1
 
 
 #processing results:  
-proc_compare <- function(nruns=10,q=1 nlambda=10,   alphalist= seq(0,1,0.1), n_passes=1000) {
+proc_compare <- function(nruns=10,q=1, nlambda=10,   alphalist= seq(0,1,0.1), n_passes=1000) {
   tot_auc = compare(nruns=nruns,q=q,  nlambda=nlambda,   alphalist= alphalist, n_passes=n_passes)  
   auclist_dl=tot_auc[1,]
   auclist_el=tot_auc[2,]
