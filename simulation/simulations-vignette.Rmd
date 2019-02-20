@@ -192,23 +192,23 @@ source("compare_simul.R")
 
 
 ```{r compare_no_noise}
-#10 runs accuracy comparaison with no noise
-proc_compare(nruns=1000, q=1)
+#100 runs accuracy comparaison with no noise
+proc_compare(nruns=100, q=1)
 
 ```
 
 # Experiment runs with small noise
  
 ```{r compare_small_noise}
-#10 runs accuracy comparaison with noise ration = 0.4
-proc_compare(nruns=1000, q=0.4)
+#100 runs accuracy comparaison with noise ration = 0.4
+proc_compare(nruns=100, q=0.4)
 ```
 
 # Experiment runs with big noise
 
 ```{r compare_big_noise}
-#10 runs accuracy comparaison with noise ration = 0.1
-proc_compare(nruns=1000, q=0.2)
+#100 runs accuracy comparaison with noise ration = 0.1
+proc_compare(nruns=100, q=0.2)
 ```
 
 We can see that ElasticNet outperforms droplasso when the simulations do not contain noise or do contain moderate noise. However droplasso significantly outperforms ElasticNet when the simulations contain more and more noise.
