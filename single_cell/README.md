@@ -1,4 +1,4 @@
-# droplasso single cell experiments: 
+# Single-cell droplasso experiments: 
 This repo contains R code for reproducing real data results and the mentioned figures, tables and selected genes in: 
 > Khalfaoui, Beyrem, and Jean-Philippe Vert. "DropLasso: A robust variant of Lasso for single cell RNA-seq data." arXiv preprint arXiv:1802.09381 (2018).
 
