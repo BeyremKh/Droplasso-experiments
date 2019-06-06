@@ -21,41 +21,41 @@ numCores <- detectCores()-1
 
 # Data to extract from conquer
 conquerdata = list(
-  # list(
-  #   name = "EMTAB2805",
-  #   classid = "cell_cycle_stage",
-  #   class = c("G1",
-  #             "G2M"),
-  #   displayname = "EMTAB2805, G1 vs G2M"
-  # ),
-  # list(
-  #   name = "EMTAB2805",
-  #   classid = "cell_cycle_stage",
-  #   class = c("G1",
-  #             "S"),
-  #   displayname = "EMTAB2805, G1 vs S"
-  # ),
-  # list(
-  #   name = "EMTAB2805",
-  #   classid = "cell_cycle_stage",
-  #   class = c("S",
-  #             "G2M"),
-  #   displayname = "EMTAB2805, S vs G2M"
-  # ),
-  # list(
-  #   name = "GSE45719",
-  #   classid = "source_name_ch1",
-  #   class = c("16-cell stage blastomere",
-  #             "Mid blastocyst cell (92-94h post-fertilization)"),
-  #   displayname = "GSE45719, 16-cell vs Mid blastocyst"
-  # ),
-  # list(
-  #   name = "GSE45719",
-  #   classid = "source_name_ch1",
-  #   class = c("16-cell stage blastomere",
-  #             "8-cell stage blastomere"),
-  #   displayname = "GSE45719, 16-cell vs 8-cell"
-  # ),
+   list(
+     name = "EMTAB2805",
+     classid = "cell_cycle_stage",
+     class = c("G1",
+               "G2M"),
+     displayname = "EMTAB2805, G1 vs G2M"
+   ),
+   list(
+     name = "EMTAB2805",
+     classid = "cell_cycle_stage",
+     class = c("G1",
+               "S"),
+     displayname = "EMTAB2805, G1 vs S"
+   ),
+   list(
+     name = "EMTAB2805",
+     classid = "cell_cycle_stage",
+     class = c("S",
+               "G2M"),
+     displayname = "EMTAB2805, S vs G2M"
+   ),
+   list(
+     name = "GSE45719",
+     classid = "source_name_ch1",
+     class = c("16-cell stage blastomere",
+               "Mid blastocyst cell (92-94h post-fertilization)"),
+     displayname = "GSE45719, 16-cell vs Mid blastocyst"
+   ),
+   list(
+     name = "GSE45719",
+     classid = "source_name_ch1",
+     class = c("16-cell stage blastomere",
+               "8-cell stage blastomere"),
+     displayname = "GSE45719, 16-cell vs 8-cell"
+   ),
   list(
     name = "GSE48968-GPL13112",
     classid = "source_name_ch1",
